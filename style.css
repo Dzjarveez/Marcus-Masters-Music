@@ -301,6 +301,7 @@ h2{
         max-width: 591px;
         margin-bottom: 0;
         font-size: 16px;
+        text-align: justify;
     }
     .about__row1, .about__row2{
         gap: 0;
@@ -322,7 +323,7 @@ h2{
 
 /* services */
 .services{
-    background: url('images/Shapka_VK_SILVER_VER3.jpg') center/auto 1446px;
+    background: url('images/Shapka_VK_SILVER_VER3.jpg') center/cover no-repeat;
 }
 .services__conteiner{
     position: relative;
@@ -382,16 +383,8 @@ h2{
     background-color: rgba(101, 101, 101, 0.3);
     z-index: 0;
 }
-@media (max-width: 1181px){
-    .services__gray-back{
-        width: 900px;
-    }
-}
-@media (max-width: 995px){
-    .services__gray-back{
-        width: 800px;
-    }
-}
+@media (max-width: 1181px){.services__gray-back{width: 900px;}}
+@media (max-width: 995px){.services__gray-back{width: 800px;}}
 @media (max-width: 900px) {
     .services__item-text p{
         font-size: 16px;
@@ -426,7 +419,9 @@ h2{
     }
     .services__item-text p{
         margin-bottom: 20px;
+        text-align: justify;
     }
+    .services__items .button{margin: 10px auto 100px auto;}
 }
 
 /* footer */
@@ -536,3 +531,6 @@ footer{
 @media (max-width: 400px){
     .footer_adress{max-width: 300px; text-align: center;}
 }
+
+/* all span */
+@media (max-width: 767px){p span, h1 span, h2 span, h3 span{display: none;}}
