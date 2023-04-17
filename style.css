@@ -147,7 +147,7 @@ nav img{height: 130px;}
 main{
     margin: 130px 0 0 0;
     position: relative;
-    background: url('images/main_cover.webp') center/cover;
+    background: url('images/main_cover.webp') center/cover fixed;
 }
 main::before{
     content: "";
@@ -211,6 +211,9 @@ main p{
     margin-top: 33px;
     margin-bottom: 110px;
     animation: slide 1.2s ease-in-out infinite alternate;
+}
+@media (max-width: 1025px) {
+    main{background: url('images/main_cover.webp') center/cover;}
 }
 @media (max-width: 768px) {
     main{margin-top: 100px;}
